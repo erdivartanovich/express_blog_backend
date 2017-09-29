@@ -11,19 +11,19 @@ const Posts = require('./src/domains/posts');
 const port = 8080;
 
 // config middleware
-// app.use(bodyParser.json());
-// app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
-// app.use(function(req, res, next) {
-//   res.header("Access-Control-Allow-Origin", "*");
-//   res.header(
-//       "Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS"
-//   );
-//   res.header(
-//       "Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept"
-//   );
-//   next();
-// });
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header(
+      "Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS"
+  );
+  res.header(
+      "Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept"
+  );
+  next();
+});
 
 //generate data
 const posts = new Posts();
@@ -45,12 +45,6 @@ app.put('/posts/:id', function (req, res) {
   const post = posts.update(req.params['id'], payloads);
   res.json(post);
 });
-
-
-
-// app.listen(port, function () {
-//   console.log(`Server listening on port ${port}!`);
-// });
 
 if (module === require.main) {
   // [START server]
