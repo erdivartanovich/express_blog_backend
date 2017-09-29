@@ -8,7 +8,7 @@ const Posts = require('./src/domains/posts');
 
 
 //app config
-const port = 8081;
+const port = 8080;
 
 // config middleware
 // app.use(bodyParser.json());
