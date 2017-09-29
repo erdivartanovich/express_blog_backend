@@ -9,6 +9,7 @@ const Posts = require('./src/domains/posts');
 
 //app config
 const port = 8080;
+// const port = 3000;
 
 // config middleware
 app.use(bodyParser.json());
@@ -24,6 +25,9 @@ app.use(function(req, res, next) {
   );
   next();
 });
+
+// load public folder as static
+app.use(express.static('public'));
 
 //generate data
 const posts = new Posts();
