@@ -7,7 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "erdivartanovich",
+  "repository": {
+    "type": "git",
+    "url": "https://source.developers.google.com/p/magguru-net/r/magguru-net-backdoor "
+  },
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.17.2",
