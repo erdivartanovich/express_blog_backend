@@ -1,0 +1,22 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "chance": "^1.0.11",
+    "express": "^4.15.4"
+  },
+  "devDependencies": {},
+  "description": "",
+  "engines": {
+    "node": ">=4.3.2"
+  }
+}
