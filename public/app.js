@@ -1923,9 +1923,8 @@ var _mithril2 = _interopRequireDefault(_mithril);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var port = 8080;
 // const baseUrl = 'https://magguru-net.appspot.com/';
-var baseUrl = 'http://localhost:' + port + '/';
+var baseUrl = '/';
 
 var api = function api(method, path) {
     var payload = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : null;
