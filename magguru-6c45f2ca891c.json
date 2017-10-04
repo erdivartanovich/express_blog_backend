@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "magguru-net",
+  "private_key_id": "6c45f2ca891c78c7bf8a3b798c0b7716adb75f5d",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC3tBg/hMGdGVOe\neNsgTaMY5MnTMMbhYcZ6uc2Jj5/AhfltdrVOdzNkVt4SQ01gcj9VN6fRqCyi6Omx\nfzBjBQJezkdFRGg8vlFv5kprhvjOoU2lY0As+v5uNNyR4KV8SBl7+FaS6hFm85vm\nDzgbsDMXPtuKReh0wURe8Nhzt6ZKZApWQ0C1Kh4HoVqRMnZgMSQjXpFyVsoPQS6Z\npxXm+d2bZuXjpc3kntAnlIbkPC+alyDcNgcgg9qSpJSrTR2Awq8gHpqaNM/xP/8w\nIwjEkxheJzHgCekMzwZzn1gPlZ91wrKNlRKdTpVTamnmczQtYbI7i2rk6gPAWoA9\npX4VJiwXAgMBAAECggEAUTP1MgKzeQesfFUM+7sF2OetRUL+7rrDOxWtwtxvb/Fo\n39fE7kHnwDdb47PHXNYzo6496wHNdVfCkXjZATRCJ3lEbNx/vTYdlnq0M9LOYbxQ\nr8ZvJFLwq/OG+p7UV9shFLkiP7/i4GDX7XqVwTuCYgihj/418oJKADOzYndwNNpC\nJBeK3RZB2rHi6Tsn0vVeQCx6/q1npQESMC9CSpa31L13QLvfhc1Ow835SKciP8o8\nY1EGsakX5v3NKvQwnNuCi8Hk6V4jbHLcyw1tXd42uerLPsB8F+WD5P21Khc2q9yV\nsGiZLIcleZ50FfVctVBrHm4CuMArnkV7IQmTNA0+KQKBgQDw9kezZqncIBlOah0Q\n2aYrUHoWgqJNEcHyOcvDLAypv5FabFewNf+u8Srfs7jGiWSr+zQbRY9tDtlew/XC\nD7ZAg+SEltDG8H7jisR9NPO/Ii03Kri95VaiuwtP7DxJ/gYWL4WOibacH8rHWbbI\nJRviEums0pemIAldJ147PwqSXwKBgQDDKwan6dEjM3t3nM2xkyI7IqgUIrHY+6KL\n2wIJqe3Cj7uVBFYSQAQrh1NTb9Wv4vi0uraxXwT5a2gYPq6KkFfh2GFMU6ofT5Xq\nZPWzYb69oiKTE+jPkL0X/SfsqDwQVOvujg0ZKrZnOQ8TNj/752zGiENs09ClWe4p\nFAlSPgnxSQKBgQDAihoq6NrLcL6n4LSO9UsJC0oy2Hl1mb3enn4J2xXXQaKUnUPI\nIq3GjSBUFdiMk9Zkcdpl/EQpwZbBWVXzlfhsPreHlrcGb78EdKqi3X/y9w0oKrPp\n0OpUJ59XYo2eFiOo8JoIllPbFrBCcJZUAQrxr2kW1kOk066Hx+BM+QeqgwKBgCmY\nsgJ3wytNfbMwqGaAhXs1F72y51TnzO0h8H0+yn39RG2uTun02u6sGQZff5vNNFTQ\ntr93EQhX7Ae+1FSUDycDhzlNW6TwwXMDsZpZ6t1gAR53z9btcl/6hNfbw3F3qBFg\nFUqX3+iAMMZXeaum13g48qXvPzj+wdPfgV0V++iBAoGBANHwzzP1/eg1Hv7/Jj9W\nZwzyrxjlERuZ+RRFI0UVGI8tGg27GugyEXXdJhjnfm1QR/eDdrwgP96FV/acFpId\nJYIs4HpAEhoNk5uhvv/c/QQSjpwngxJoe35KQ+Qx019naxXiK44J+s7d5phEdFVP\nGqBrcn7VwhIN7ge5AwRQDyBd\n-----END PRIVATE KEY-----\n",
+  "client_email": "pg-magguru-sa@magguru-net.iam.gserviceaccount.com",
+  "client_id": "105543013768641278929",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/pg-magguru-sa%40magguru-net.iam.gserviceaccount.com"
+}
