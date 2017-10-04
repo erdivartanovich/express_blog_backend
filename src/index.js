@@ -52,9 +52,9 @@ app.get(prefix + '/posts', function(req, res) {
     .then(function(results){
       presentResponse(res, 'posts', results, 'success');
     })
-    // .catch(function(error) {
-    //   presentError(res, error, 'error when get');
-    // })
+    .catch(function(error) {
+      presentError(res, error, 'error when get');
+    })
 });
 
 app.post(prefix + '/posts', function(req, res) {
