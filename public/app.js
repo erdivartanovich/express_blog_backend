@@ -1337,14 +1337,13 @@ var Post = {
     list: [],
     loadList: function loadList() {
         return _backdoor.backdoor.get('posts').then(function (result) {
-            Post.list = result;
+            Post.list = result.data;
         });
     },
     current: {},
     load: function load(id) {
         return _backdoor.backdoor.get('posts/' + id).then(function (result) {
-            Post.current = result[0];
-            Post.current.s_post_date = (0, _date.formatDate)(Post.current.post_date);
+            Post.current = result.data;
         });
     },
     save: function save() {
@@ -1924,7 +1923,7 @@ var _mithril2 = _interopRequireDefault(_mithril);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // const baseUrl = 'https://magguru-net.appspot.com/';
-var baseUrl = '/';
+var baseUrl = '/api/v1/';
 
 var api = function api(method, path) {
     var payload = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : null;
@@ -1992,6 +1991,7 @@ var _mithril2 = _interopRequireDefault(_mithril);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var PostCard = exports.PostCard = function PostCard(post) {
+    var post = post.attributes;
     return (0, _mithril2.default)('article.pv4 bt bb b--black-10 ph3 ph0-l grow pointer', { href: "/post/" + post.id, oncreate: _mithril2.default.route.link }, (0, _mithril2.default)('.flex flex-column flex-row-ns', [(0, _mithril2.default)('.w-100 w-60-ns pr3-ns order-2 order-1-ns', [(0, _mithril2.default)('h1.f3 avenir mt0 lh-title ttc near-black', post.title), (0, _mithril2.default)('p.f5 avenir f4-l lh-copy black-90', _mithril2.default.trust(post.chunk))]), (0, _mithril2.default)('.pl3-ns order-1 order-2-ns mb4 mb0-ns w-100 w-40-ns', (0, _mithril2.default)('img.db ba b--black-10 shadow-1 black dim', { src: "http://mrmrs.github.io/photos/cpu.jpg", alt: "photo" }))]));
 };
 
@@ -2181,7 +2181,9 @@ exports.default = {
         if (window) {
             window.scroll(0, 0);
         }
-        return (0, _mithril2.default)('article', [(0, _mithril2.default)('header.bg-navy sans-serif', (0, _mithril2.default)('div.mw9 center pa4 pt5-ns ph7-l', [(0, _mithril2.default)('time.f6 mb2 dib ttu tracked light-gray', _Post.Post.current.s_post_date), (0, _mithril2.default)('h3.f2 f1-m f-headline-l measure-narrow lh-title mv0', (0, _mithril2.default)('span.bg-black-90 lh-copy gold pa1 tracked-tight', _Post.Post.current.title)), (0, _mithril2.default)('h4.f3 athelas fw1 i gold', _Post.Post.current.subtitle), (0, _mithril2.default)('h5.f3 ttu tracked light-gray', 'by ' + _Post.Post.current.by)])), (0, _mithril2.default)('.pa4 ph7-l mw9-l center', [(0, _mithril2.default)('p.f5 f3-ns sans-serif  lh-copy measure sans-serif black-90', _mithril2.default.trust(_Post.Post.current.body))])]);
+        var post = _Post.Post.current.attributes;
+        console.log("******", post);
+        return (0, _mithril2.default)('article', [(0, _mithril2.default)('header.bg-navy sans-serif', (0, _mithril2.default)('div.mw9 center pa4 pt5-ns ph7-l', [(0, _mithril2.default)('time.f6 mb2 dib ttu tracked light-gray', post.updated_at), (0, _mithril2.default)('h3.f2 f1-m f-headline-l measure-narrow lh-title mv0', (0, _mithril2.default)('span.bg-black-90 lh-copy gold pa1 tracked-tight', post.title)), (0, _mithril2.default)('h4.f3 athelas fw1 i gold', post.subtitle), (0, _mithril2.default)('h5.f3 ttu tracked light-gray', 'by ' + post.title)])), (0, _mithril2.default)('.pa4 ph7-l mw9-l center', [(0, _mithril2.default)('p.f5 f3-ns sans-serif  lh-copy measure sans-serif black-90', _mithril2.default.trust(post.body))])]);
     }
 };
 
